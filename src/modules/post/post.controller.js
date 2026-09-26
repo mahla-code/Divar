@@ -41,7 +41,8 @@ class PostController {
                 categories,
                 showBack,
                 category: category?._id.toString(),
-                options
+                options,
+                mapApikey:process.env.MAP_API_KEY
             });
         } catch (error) {
             next(error);
